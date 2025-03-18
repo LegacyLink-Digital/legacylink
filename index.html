@@ -85,28 +85,39 @@
         <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="37896646-fc74e9f6-b3ce-49f4-b47f-225b000b8d07" data-source="button" data-button-label="Fazer meu testamento agora!" style="width: 100%; height: 50px; font-size: 18px;"></script>
     </section>
             
-    <!-- Formulário de Captura leeds-->
-    <section id="form" class="py-10 bg-white text-center px-6">
-        <h2 class="text-2xl font-bold">Cadastre-se para Saber Mais</h2>
-        <p class="text-gray-600 mt-2">Deixe seu e-mail e entraremos em contato com mais informações sobre seu testamento digital.</p>
-        <form action="https://formsubmit.co/francisco.muniz@outlook.com.br" method="POST" class="mt-6 max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
-            <input type="hidden" name="_next" value="https://legacylink-digital.github.io/legacylink/">
-            <input type="hidden" name="_captcha" value="false">
-            <div class="mb-4">
-                <label for="name" class="block text-gray-700 font-semibold">Nome</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-semibold">E-mail</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-            </div>
-             <div class="mb-4">
-                <label for="Whatsapp" class="block text-gray-700 font-semibold">Whatsapp</label>
-                <input type="Whatsapp" id="Whatsapp" name="Whatsapp" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-blue-700">Receber Informações</button>
-        </form>
-    </section>
+   <!-- Formulário de Captura de Leads -->
+<section id="form" class="py-10 bg-white text-center px-6">
+    <h2 class="text-2xl font-bold">Cadastre-se e Receba Mais Informações</h2>
+    <p class="text-gray-600 mt-2">Preencha seus dados para saber mais sobre nosso Testamento Digital.</p>
+
+    <form action="https://formspree.io/f/xeoaoyrv" method="POST" class="mt-6 max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold">Nome:</label>
+            <input type="text" name="name" id="name" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+        
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold">E-mail:</label>
+            <input type="email" name="email" id="email" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <div class="mb-4">
+            <label for="whatsapp" class="block text-gray-700 font-semibold">WhatsApp:</label>
+            <input type="tel" name="whatsapp" id="whatsapp" required placeholder="(99) 99999-9999" class="w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-semibold">Mensagem (opcional):</label>
+            <textarea name="message" id="message" class="w-full px-4 py-2 border rounded-lg"></textarea>
+        </div>
+
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-blue-700 w-full">
+            Enviar Informações
+        </button>
+    </form>
+
+
+</section>
 
     <!-- Perguntas Frequentes -->
     <section class="py-10 bg-gray-50 text-center px-6">
